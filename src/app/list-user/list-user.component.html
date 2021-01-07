@@ -1,0 +1,23 @@
+<h2>List user</h2>
+
+<table>
+  <tr>
+    <td>id</td>
+    <td>username</td>
+    <td>password</td>
+  </tr>
+  <tr *ngFor="let users of listUser">
+    <td [routerLink]="['/detail']">{{users.id}}</td>
+    <td>{{users.username}}</td>
+    <td>{{users.password}}</td>
+    <td>
+    <button [routerLink]="['/edit', users.id]">edit</button>
+    <button [routerLink]="['/delete', users.id]">delete</button>
+    </td>
+  </tr>
+</table>
+
+<button [routerLink]="['/create']">ADD</button>
+
+
+

@@ -1,0 +1,15 @@
+
+
+<div class="container-xl">
+  <h2>Delete product</h2>
+
+  <div class="card">
+    <div class="card-body">
+      <div class="bg-danger p-2 text-white mb-3">Confirm deletion?</div>
+      <div>{{user.username}}</div>
+      <div>{{user.password}}</div>
+      <button (click)="delete()" class="btn btn-outline-danger">Delete</button>
+    </div>
+  </div>
+  <a [routerLink]="['/']" class="btn btn-outline-info mb-3">Back</a>
+</div>

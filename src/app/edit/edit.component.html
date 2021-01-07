@@ -1,0 +1,8 @@
+<h2>edit user</h2>
+
+<form [formGroup]="newUserForm" (ngSubmit)="onUpdate()">
+<!--  <input type="text" formControlName="id" > id <br>-->
+  <input type="text" formControlName="username" id="username"> username <br>
+  <input type="text" formControlName="password" id="password" > password
+  <button type="submit">edit</button>
+</form>
